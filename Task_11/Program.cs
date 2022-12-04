@@ -6,8 +6,11 @@
 */
 void ThirdNumber(int number, int numberLeng)
 {
-    int ThirdNumber = numberLeng - 3;
-    Console.WriteLine(10**2);
+    double ThirdNumber = Math.Pow(10, numberLeng-3);
+    int numberRes = Convert.ToInt32(ThirdNumber);
+    int resultat = number / numberRes % 10;
+
+    Console.WriteLine(resultat);
 }
 Console.WriteLine("Введите любое число - ");
 string number_str = Console.ReadLine()??" ";
@@ -20,6 +23,10 @@ if (numberLeng > 2)
     {
         ThirdNumber(number, numberLeng);
     }
-    else Console.WriteLine("Не все символы цыфры, введите только цифры");
+    else 
+    {
+        Console.WriteLine("Не все символы цыфры или ввели число больше 2147483647,");
+        Console.WriteLine("введите только цифры или число менше 2147483648");
+    }
 }
 else Console.WriteLine("Третьей цифры нет");
