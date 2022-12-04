@@ -31,5 +31,5 @@ if (isNum == true)
         Console.WriteLine("Введити цифру от 1 до 7");
     }
 }
-Console.WriteLine("Вы ввели не цифру. Введити цифру от 1 до 7");
+else Console.WriteLine("Вы ввели не цифру. Введити цифру от 1 до 7");
 
