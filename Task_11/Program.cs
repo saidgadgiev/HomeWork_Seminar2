@@ -4,9 +4,10 @@
 78 -> третьей цифры нет
 32679 -> 6
 */
-void ThirdNumber(int number);
+void ThirdNumber(int number, int numberLeng)
 {
-    Console.WriteLine("Yes");
+    int ThirdNumber = numberLeng - 3;
+    Console.WriteLine(10**2);
 }
 Console.WriteLine("Введите любое число - ");
 string number_str = Console.ReadLine()??" ";
@@ -17,7 +18,7 @@ if (numberLeng > 2)
     bool isNum = int.TryParse(number_str, out number); // явл все символы цифрами
     if (isNum == true)
     {
-        ThirdNumber(number);
+        ThirdNumber(number, numberLeng);
     }
     else Console.WriteLine("Не все символы цыфры, введите только цифры");
 }
