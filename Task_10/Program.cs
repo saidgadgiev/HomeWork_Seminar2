@@ -21,7 +21,7 @@ if (isNumber == true) // проверка данных на соответств
         {
         Console.WriteLine(number/10%10);
         }
-    SecondNumber(number);
+        SecondNumber(number);
     }
 
     else Console.WriteLine("Вы ввели не трехзначное число попробуйте снова"); // если не явл

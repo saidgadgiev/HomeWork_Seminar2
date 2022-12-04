@@ -8,5 +8,14 @@
 Console.WriteLine("Введите любое число - ");
 string number_str = Console.ReadLine()??" ";
 int numberLeng = number_str.Length;
-if (numberLeng < 3)
-Console.WriteLine(numberLeng);
+if (numberLeng > 2)
+{
+    int number;
+    bool isNum = int.TryParse(number_str, out number); // явл все символы цифрами
+    if (isNum == true)
+    {
+        Console.WriteLine(numberLeng);
+    }
+    else Console.WriteLine("Не все символы цыфры, введите только цифры");
+}
+else Console.WriteLine("Третьей цифры нет");
