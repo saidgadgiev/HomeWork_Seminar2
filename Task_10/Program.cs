@@ -5,6 +5,10 @@
 782 -> 8
 918 -> 1
 */
+void SecondNumber(int number)
+{
+    Console.WriteLine(number/10%10);
+}
 
 Console.WriteLine("Введите трехзначное число");
 string number_str = Console.ReadLine() ??" "; // Вводим данные
@@ -16,11 +20,6 @@ if (isNumber == true) // проверка данных на соответств
 {
     if (numberLeng == 3) // если явл число трехзначным то
     {
-        
-        void SecondNumber(int number)
-        {
-        Console.WriteLine(number/10%10);
-        }
         SecondNumber(number);
     }
 
